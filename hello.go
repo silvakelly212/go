@@ -85,6 +85,31 @@
 
 // ou posso alterar o comando fmt.Scanf para somente Scan
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	nome := "Kelly"
+// 	versao := 1.1
+// 	fmt.Println("Olá sr.", nome)
+// 	fmt.Println("Este programa está na versão", versao)
+// 	// EXIBINDO AS OPCOES DE MENU
+// 	fmt.Println("1 - Iniciar Monitoramento")
+// 	fmt.Println("2 - Exbir logs")
+// 	fmt.Println("3 - Sair")
+// 	var comando int
+// 	//%d representa um numero inteiro
+// 	// a variavel que esta guardando o menu seleciondo
+// 	fmt.Scan(&comando)
+// 	// para saber o endereço da variavel nós informamos o & na frente das variavel
+// 	// descobrindo o endereco da variavel &comando
+// 	fmt.Println("O endereço da minha variavel comando é", &comando)
+// 	// ele aparece como exadecimal
+// 	fmt.Println("O comando escolhido foi", comando)
+// }
+
+////   ##### Mão na massa #### 
 package main
 
 import "fmt"
@@ -96,15 +121,12 @@ func main() {
 	fmt.Println("Este programa está na versão", versao)
 	// EXIBINDO AS OPCOES DE MENU
 	fmt.Println("1 - Iniciar Monitoramento")
-	fmt.Println("2 - Exbir logs")
-	fmt.Println("3 - Sair")
+	fmt.Println("2 - Exibir logs")
+	fmt.Println("0 - Sair do Programa")
+
 	var comando int
-	//%d representa um numero inteiro
-	// a variavel que esta guardando o menu seleciondo
 	fmt.Scan(&comando)
-	// para saber o endereço da variavel nós informamos o & na frente das variavel
-	// descobrindo o endereco da variavel &comando
-	fmt.Println("O endereço da minha variavel comando é", &comando)
-	// ele aparece como exadecimal
-	fmt.Println("O comando escolhido foi", comando)
+	fmt.Println("0 valor da variável comando é", comando)
+
 }
+
