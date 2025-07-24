@@ -101,7 +101,7 @@ func main() {
 	var comando int
 	//%d representa um numero inteiro
 	// a variavel que esta guardando o menu seleciondo
-	fmt.Scanf("%d", &comando)
+	fmt.Scan(&comando)
 	// para saber o endereço da variavel nós informamos o & na frente das variavel
 	// descobrindo o endereco da variavel &comando
 	fmt.Println("O endereço da minha variavel comando é", &comando)
