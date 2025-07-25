@@ -218,4 +218,26 @@ func exibeMenu() {
 	fmt.Println("0 - Sair do Programa")
 
 }
+//Fazendo requisicão web acessando o site alura
+//Função que retorna multiplos valores
 
+// func iniciarMonitoramento() {
+// 	fmt.Println("Monitoramento....")
+// 	site := "https://www.alura.com.br"
+// 	resp, _ := http.Get(site)
+// 	fmt.Println(resp)
+// }
+
+// Para saber o retorno do status no GO
+func iniciarMonitoramento() {
+	fmt.Println("Monitorando...")
+	// site com URL inexistente
+	site := "https://httpbin.org/status/404" // ou 200
+	resp, _ := http.Get(site)
+
+	if resp.StatusCode == 200 {
+		fmt.Println("Site:", site, "foi carregado com sucesso!")
+	} else {
+		fmt.Println("Site:", site, "está com problemas. Status Code:", resp.StatusCode)
+	}
+}
