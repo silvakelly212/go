@@ -133,23 +133,54 @@
 
 // 03 Controlando o fluxo do script
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	nome := "Kelly"
+// 	versao := 1.1
+// 	fmt.Println("Olá sr.", nome)
+// 	fmt.Println("Este programa está na versão", versao)
+
+// 	fmt.Println("1 - Iniciar Monitoramento")
+// 	fmt.Println("2 - Exibir logs")
+// 	fmt.Println("0 - Sair do Programa")
+
+// 	var comando int
+// 	fmt.Scan(&comando)
+// 	fmt.Println("O comando escolhido foi", comando)
+
+// 	switch comando {
+// 	case 1:
+// 		fmt.Println("Monitorando...")
+// 	case 2:
+// 		fmt.Println("Exibindo Logs...")
+// 	case 0:
+// 		fmt.Println("Saindo do programa...")
+// 	default:
+// 		fmt.Println("Não conheço este comando")
+// 	}
+// }
+
+//introdução as funçoes
+
 package main
 
-import "fmt"
+//possui as função de impressão
+import (
+	"fmt"
+	// função de sair os
+	"os"
+)
 
 func main() {
-	nome := "Kelly"
-	versao := 1.1
-	fmt.Println("Olá sr.", nome)
-	fmt.Println("Este programa está na versão", versao)
-
-	fmt.Println("1 - Iniciar Monitoramento")
-	fmt.Println("2 - Exibir logs")
-	fmt.Println("0 - Sair do Programa")
-
-	var comando int
-	fmt.Scan(&comando)
-	fmt.Println("O comando escolhido foi", comando)
+	//chamando a função exibe introdução
+	exibeIntroduvao()
+	//chamando a função de exibir menu
+	exibeMenu()
+	// chamando a função ler comando em int
+	comando := leComando()
 
 	switch comando {
 	case 1:
@@ -158,7 +189,33 @@ func main() {
 		fmt.Println("Exibindo Logs...")
 	case 0:
 		fmt.Println("Saindo do programa...")
+		os.Exit(0)
 	default:
 		fmt.Println("Não conheço este comando")
+		os.Exit(-1)
 	}
 }
+
+// Criando funcoes no Go
+
+func exibeIntroduvao() {
+	nome := "Kelly"
+	versao := 1.1
+	fmt.Println("Olá sr.", nome)
+	fmt.Println("Este programa está na versão", versao)
+}
+
+func leComando() int {
+	var comandoLido int
+	fmt.Scan(&comandoLido)
+	fmt.Println("O comando escolhido foi", comandoLido)
+	return comandoLido
+}
+
+func exibeMenu() {
+	fmt.Println("1 - Iniciar Monitoramento")
+	fmt.Println("2 - Exibir logs")
+	fmt.Println("0 - Sair do Programa")
+
+}
+
