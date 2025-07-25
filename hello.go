@@ -259,3 +259,24 @@ func iniciarMonitoramento() {
 		fmt.Println("Site:", site, "está com problemas. Status Code:", resp.StatusCode)
 	}
 }
+
+//Trabalhando com lista slice que funciona em cima de um array Go
+
+func iniciarMonitoramento() {
+	fmt.Println("Monitorando...")
+	var sites [4]string
+	sites[0] = "https://random-status-code.herokuapp.com/"
+	sites[1] = "https://www.alura.com.br"
+	sites[3] = "https://www.caelum.com.br"
+
+	fmt.Sprintln(sites)
+
+	site := "https://random-status-code.heoruapp.com/"
+	resp, _ := http.Get(site)
+
+	if resp.StatusCode == 200 {
+		fmt.Println("Site:", sites, "foi carregado com sucesso!")
+	} else {
+		fmt.Println("Site:", sites, "está com problemas. Status Code:", resp.StatusCode)
+	}
+}
