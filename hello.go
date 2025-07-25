@@ -295,4 +295,29 @@ func exibeNomes() {
 	fmt.Println("O meu slice tem capacidade para", cap(nomes), "itens")
 }
 
-//
+//#######  Range ############ 
+func iniciarMonitoramento() {
+	fmt.Println("Monitorando...")
+	//declarando slice
+	sites := []string{"https:www.google.com", "https:www.caelum.com", "https:www.alura.com"}
+	//fmt.Println(sites)
+	//for i := 0; i < len(sites); i++ {
+	//lange
+	for i, site := range sites {
+		fmt.Println("Estou passando na posicoa", i, "do meu slice e essa posicao tem o site:", site)
+		//Retorno desta consulta que retorna a posicao
+		//stou passando na posicoa 0 do meu slice e essa posicao tem o site: https:www.google.com
+		//Estou passando na posicoa 1 do meu slice e essa posicao tem o site: https:www.caelum.com
+		//Estou passando na posicoa 2 do meu slice e essa posicao tem o site: https:www.alura.com
+		//Site: https://httpbin.org/status/404 está com problemas. Status Code: 404
+	}
+	// site com URL inexistente
+	site := "https://httpbin.org/status/404" // ou 200
+	resp, _ := http.Get(site)
+
+	if resp.StatusCode == 200 {
+		fmt.Println("Site:", site, "foi carregado com sucesso!")
+	} else {
+		fmt.Println("Site:", site, "está com problemas. Status Code:", resp.StatusCode)
+	}
+}
