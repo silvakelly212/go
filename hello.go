@@ -280,3 +280,19 @@ func iniciarMonitoramento() {
 		fmt.Println("Site:", sites, "está com problemas. Status Code:", resp.StatusCode)
 	}
 }
+
+}
+
+func exibeNomes() {
+	//slice simula uma arry
+	nomes := []string{"Douglas", "Daniel", "Bernardo"}
+
+	fmt.Println("O meu slice tem", len(nomes), "itens")
+	fmt.Println("O meu slice tem capacidade para", cap(nomes), "itens")
+	//acrescenta o numero de posição
+	nomes = append(nomes, "Aparecida")
+	fmt.Println("O meu slice tem", len(nomes), "itens")
+	fmt.Println("O meu slice tem capacidade para", cap(nomes), "itens")
+}
+
+//
