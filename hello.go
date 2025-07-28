@@ -1,3 +1,4 @@
+
 // #### 2. Trabalhando com variáveis #####
 // package main
 
@@ -395,3 +396,24 @@ func testaSite(site string) {
 		fmt.Println("Site:", site, "está com problemas. Status Code:", resp.StatusCode)
 	}
 }
+func leSitesDoArquivo() []string {
+
+	var sites []string
+
+	arquivo, err := os.Open("sites.txt")
+	if err != nil {
+		fmt.Println("Ocorreu um erro:", err)
+	}
+
+	leitor := bufio.NewReader(arquivo)
+
+	linha, err := leitor.ReadString('\n')
+	if err != nil {
+		fmt.Println("Ocorreu um erro:", err)
+	}
+
+	fmt.Println(linha)
+
+	return sites
+}
+
