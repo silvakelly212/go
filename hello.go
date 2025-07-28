@@ -416,4 +416,28 @@ func leSitesDoArquivo() []string {
 
 	return sites
 }
+// pulando linha trimSpae
 
+// restante do código omitido
+
+func leSitesDoArquivo() []string {
+
+    var sites []string
+
+    arquivo, err := os.Open("sites.txt")
+    if err != nil {
+        fmt.Println("Ocorreu um erro:", err)
+    }
+
+    leitor := bufio.NewReader(arquivo)
+
+    for {
+        linha, err := leitor.ReadString('\n')
+        fmt.Println(linha)
+        if err == io.EOF {
+            fmt.Println("Ocorreu um erro:", err)
+        }
+    }
+
+    return sites
+}
