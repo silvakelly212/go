@@ -1,6 +1,6 @@
 ## Teste em Go
 
-# 1. Preparando ambiente para testes Go
+# 1. Preparando ambiente
 
 Para instalar o Go clique no lin abaixo
 
