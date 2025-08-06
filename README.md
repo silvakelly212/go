@@ -4,8 +4,9 @@
 Pré - Requisitos 
 Conhecimento na Linguagem basica de programacao Go
 
+#Pyaground 
 
-
+https://go.dev/play/p/m1yagmicHND
 
 <img width="895" height="440" alt="Screen Shot 2025-08-06 at 14 47 21" src="https://github.com/user-attachments/assets/b7075fae-fe5c-4248-a4c8-de006febeded" />
 
