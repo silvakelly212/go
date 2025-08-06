@@ -1,6 +1,6 @@
 ## Go
 
-# Preparando ambiente para testes Go
+# 1. Preparando ambiente para testes Go
 
 Para instalar o Go clique no lin abaixo
 
@@ -8,7 +8,7 @@ https://go.dev/
 
 <img width="1235" height="480" alt="Screen Shot 2025-08-06 at 16 55 25" src="https://github.com/user-attachments/assets/5ec849de-413b-43c0-b91f-758ac31f5ecd" />
 
-Instalar o VsCode 
+# 2. Instalar o VsCode 
 
 https://code.visualstudio.com/
 
