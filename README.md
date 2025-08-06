@@ -1,5 +1,15 @@
 ## Go
 
+# Preparando ambiente para testes Go
+
+Para instalar clique no lin abaixo
+
+https://go.dev/
+
+<img width="1235" height="480" alt="Screen Shot 2025-08-06 at 16 55 25" src="https://github.com/user-attachments/assets/5ec849de-413b-43c0-b91f-758ac31f5ecd" />
+
+
+
 # Testes Unitários
 Pré - Requisitos 
 Conhecimento na Linguagem basica de programacao Go
@@ -33,3 +43,5 @@ Em seguida, navegue até o diretório do projeto e abra-o:
 <img width="900" height="386" alt="Screen Shot 2025-08-06 at 14 53 05" src="https://github.com/user-attachments/assets/1a42ac34-c357-4271-a2f8-ccafa09e16f5" />
 
 https://betterstack.com/community/guides/scaling-go/golang-testify/
+
+
