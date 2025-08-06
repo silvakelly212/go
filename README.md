@@ -16,11 +16,10 @@ Você pode cloná-lo para sua máquina executando:
  
 
 git clone https://github.com/betterstack-community/gounittests.git
+
 Em seguida, navegue até o diretório do projeto e abra-o:
 
- 
-
-cd gounittests
+'''cd gounittests'''
  
 
 code .
