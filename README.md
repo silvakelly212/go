@@ -1,4 +1,4 @@
-## Go
+## Teste em Go
 
 # 1. Preparando ambiente para testes Go
 
