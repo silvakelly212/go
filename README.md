@@ -2,12 +2,17 @@
 
 # Preparando ambiente para testes Go
 
-Para instalar clique no lin abaixo
+Para instalar o Go clique no lin abaixo
 
 https://go.dev/
 
 <img width="1235" height="480" alt="Screen Shot 2025-08-06 at 16 55 25" src="https://github.com/user-attachments/assets/5ec849de-413b-43c0-b91f-758ac31f5ecd" />
 
+Instalar o VsCode 
+
+https://code.visualstudio.com/
+
+<img width="1235" height="480" alt="Screen Shot 2025-08-06 at 16 58 09" src="https://github.com/user-attachments/assets/8f371a44-8fd0-4b24-a4a5-f494003e10b2" />
 
 
 # Testes Unitários
